@@ -6,7 +6,11 @@ import auth from './auth';
 import counter from './counter';
 import {reducer as form} from 'redux-form';
 import info from './info';
+import infoPanel from './infoPanel';
+import login from './login';
+import signup from './signup';
 import widgets from './widgets';
+import practitioners from './practitioners';
 
 export default combineReducers({
   router: routerStateReducer,
@@ -18,5 +22,9 @@ export default combineReducers({
     counter3: counter
   }),
   info,
+  infoPanel,
+  signup,
+  login,
+  practitioners,
   widgets
 });
